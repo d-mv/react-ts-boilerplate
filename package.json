@@ -1,22 +1,51 @@
 {
-  "name": "react-cities",
-  "version": "0.1.0",
+  "name": "react-ts-boilerplate",
+  "version": "1.0.0",
+  "author": "DM-v",
   "private": true,
   "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "typescript": "3.3.3333",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@storybook/addon-actions": "^5.0.2",
+    "@storybook/addon-links": "^5.0.2",
+    "@storybook/addons": "^5.0.2",
+    "@storybook/react": "^5.0.2",
+    "babel-loader": "^8.0.5",
     "@types/jest": "24.0.11",
     "@types/node": "11.11.3",
     "@types/react": "16.8.8",
     "@types/react-dom": "16.8.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8",
-    "typescript": "3.3.3333"
+    "@types/webfontloader": "^1.6.29",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"

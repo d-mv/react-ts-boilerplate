@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
+import './index.scss';
+import WebFont from 'webfontloader';
+
 import App from './App';
+
 import * as serviceWorker from './serviceWorker';
+
+// loading fonts
+WebFont.load({
+  google: {
+    families: ['Sniglet', 'sans-serif']
+  }
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
