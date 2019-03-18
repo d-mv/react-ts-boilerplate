@@ -1,15 +1,12 @@
 {
   "name": "react-ts-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "DM-v",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8",
-    "redux": "^4.0.1",
-    "typescript": "3.3.3333",
-    "webfontloader": "^1.6.28"
+    "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -17,16 +14,22 @@
     "@storybook/addon-links": "^5.0.2",
     "@storybook/addons": "^5.0.2",
     "@storybook/react": "^5.0.2",
-    "babel-loader": "^8.0.5",
+    "@types/redux-logger": "^3.0.7",
     "@types/jest": "24.0.11",
     "@types/node": "11.11.3",
     "@types/react": "16.8.8",
     "@types/react-dom": "16.8.2",
     "@types/webfontloader": "^1.6.29",
+    "babel-loader": "^8.0.5",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
     "node-sass": "^4.11.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "typescript": "3.3.3333",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",
