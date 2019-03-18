@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import style from './index.scss';
+import './index.scss';
 import WebFont from 'webfontloader';
 
 import App from './App';
@@ -16,7 +16,7 @@ WebFont.load({
 });
 
 ReactDOM.render(
-  <div className={style.container}>
+  <div className="container">
     <App />
   </div>,
   document.getElementById('root')
